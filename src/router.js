@@ -6,6 +6,9 @@ import DetailItem from './components/DetailItem.vue';
 import Customers from './components/Customers.vue';
 import EditCustomer from './components/EditCustomer.vue';
 import DetailCustomer from './components/DetailCustomer.vue';
+import AddCustomer from './components/AddCustomer.vue';
+import Sales from './components/Sales.vue';
+import AddSales from './components/AddSales.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -35,8 +38,20 @@ const router = createRouter({
         component: DetailCustomer
       },
       {
+        path: '/customers/add',
+        component: AddCustomer
+      },
+      {
         path: '/customers/edit/:id',
         component: EditCustomer
+      },
+      {
+        path: '/sales',
+        component: Sales
+      },
+      {
+        path: '/sales/add',
+        component: AddSales
       }
     ]
 });

@@ -47,7 +47,7 @@
       name: 'Home',
       methods: {
         deleteItem(id) {
-          axios.delete('http://localhost:3000/items/' + id)
+          axios.delete('http://localhost:3000/customers/' + id)
           .then(response => {
             console.log(response);
             this.$router.go(0);
